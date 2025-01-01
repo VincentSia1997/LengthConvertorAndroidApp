@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LengthConverter</string>
+    <string name="length_converter_app">Length Converter App</string>
+    <string name="inputHint">Input here</string>
+    <string name="inputUnit">m</string>
+    <string name="to">to</string>
+    <string name="outputHint">Output Here</string>
+    <string name="outputUnit">cm</string>
+    <string name="convertButtonText">CONVERT</string>
+    <string name="settingButtonText">SETTINGS</string>
+    <string name="clearButtontext">CLEAR</string>
+    <string name="doneButtonText">DONE</string>
+    <string name="inputSpinnerText">Convert from</string>
+    <string name="outputSpinnerText">Convert to</string>
+    <string name="settingsText_Top">Settings</string>
+</resources>

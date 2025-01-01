@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/length_converter_app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:background="#999"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/inputLengthEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/inputHint"
+            android:inputType="number"
+            android:maxLength="10"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/inputUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inputUnit"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/outputLengthText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/outputHint"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/outputUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/outputUnit"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convertButtonText"
+        android:id="@+id/convertButton"
+        android:layout_gravity="center"
+        android:onClick="convertClick"
+        android:layout_margin="10sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settingButtonText"
+        android:id="@+id/settingsButton"
+        android:layout_gravity="center"
+        android:onClick="settingsClick"
+        android:layout_margin="10sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clearButtontext"
+        android:id="@+id/clearButton"
+        android:layout_gravity="center"
+        android:onClick="clearClick"
+        android:layout_margin="10sp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
